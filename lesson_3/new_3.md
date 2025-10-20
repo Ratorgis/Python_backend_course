@@ -60,7 +60,7 @@ HTTP - не стандартизирует вид ответа / запроса,
 ```python
 import json
 a = {'Russian': 'Moscow'}
-print(json.dumps(a)) # дампинг json в string формате
+print(json.dumps(a)) # дампинг json в string формат
 ```
 
 2. `loads` - получить что-то из *json* формата
