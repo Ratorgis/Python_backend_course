@@ -1,4 +1,5 @@
 from pathlib import Path
+import sys
 
 def tree (direction: Path, prefix: str = '') -> str:
     items = sorted(direction.iterdir())
@@ -14,7 +15,7 @@ def tree (direction: Path, prefix: str = '') -> str:
             tree(elem, prefix + extention)
 
 if __name__ == '__main__':
-    root = Path.cwd()
+    root = sys.argv[-1]
     print('.')
     tree(root)
 
